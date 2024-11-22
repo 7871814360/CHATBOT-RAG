@@ -1,0 +1,7 @@
+Flask
+Flask-cors
+ollama
+faiss-cpu
+sentence-transformers
+pymupdf
+scikit-learn

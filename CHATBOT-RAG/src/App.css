@@ -1,0 +1,109 @@
+/* ChatApp.css */
+
+.chat-container {
+    padding: 20px;
+    width: 80%;
+    height: 620px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.messages {
+    min-height: 60%;
+    max-height: 73%;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user {
+    background-color: #e7f3fe; /* Light blue for user messages */
+    text-align: right;
+}
+
+.ai {
+    background-color: #d4edda; /* Light green for AI messages */
+    text-align: left;
+}
+
+.input-area {
+    display: flex;
+    align-items: center;
+}
+
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    resize: vertical;
+    width: 90%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+
+button {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+pre {
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.speech-icon {
+    width: 24px; /* or any desired size */
+    height: 24px; /* or any desired size */
+    fill: none;
+    stroke: currentColor; /* Inherit color from parent */
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: color 0.3s; /* Smooth transition for color changes */
+}
+
+/* Optional: hover effect */
+.speech-icon:hover {
+    color: #007BFF; /* Change color on hover */
+}
+.language-dropdown {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    z-index: 10;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.language-dropdown div {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.language-dropdown div:hover {
+    background-color: #f0f0f0;
+}
